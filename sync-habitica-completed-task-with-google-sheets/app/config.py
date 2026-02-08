@@ -18,6 +18,7 @@ class Config:
     HABITICA_GSHEET_COLUMNS = [
         ("todo", "text"),
         ("notes", "notes"),
+        ("tags", "tags"),
         ("checklist", "checklist"),
         ("steak", "streak"),
         ("repeat", "repeat"),

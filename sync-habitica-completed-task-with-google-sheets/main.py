@@ -54,6 +54,7 @@ async def main():
         for row in completed_habitica_tasks_list
         if date_completed is None or row[DATE_COMPLETED_COL_IDX] > date_completed
     ]
+
     await append_sheet_data(
         sheet_name="db",
         values=filtered_completed_habitica_tasks_list,
