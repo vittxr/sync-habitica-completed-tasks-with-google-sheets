@@ -24,6 +24,14 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 1. uv sync
 2. uv run python main.py
+
+# Limitations: 
+
+Google Sheets has a limit of 20 million cells per spreadsheet ([source](https://workspaceupdates.googleblog.com/2026/09/doubled-cell-limits-in-google-sheets-now-generally-available.html)).
+
+Since this script exports 11 columns per task, each task occupies 11 cells. This means you could export approximately **1.82 million tasks** before reaching the limit.
+
+I won't handle this edge case. If you think it might be a problem, fork this project and implement your own solution.
  
 # Refs
 
